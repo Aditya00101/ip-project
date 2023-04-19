@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  body, html {
+    height: 100%;
+    margin: 0px;
+  }
+  
+  .bg {
+   background-image: url("image/interior-of-an-empty-modern-living-room-in-3d-rendering-free-photo.png");
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.image-container {
+  position: absolute;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container img {  
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+#sofa {
+  width: 43%;
+  top: 46%;
+  left: 30%;
+  z-index: 1;
+}
+
+#chair {
+  width: 17%;
+  top: 59%;
+  left: 76%;
+  z-index: 2;
+}
+
+#table {
+  width: 15%;
+  top: 69%;
+  left: 12%;
+  z-index: 3;
+}
+.painting-container {
+    position: absolute;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+.painting-container img {  
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+#painting{
+    width: 30%;
+    top: 8%;
+    left: 36%;
+    z-index: 0;
+}
+
+</style>
+</head>
+<body>
+  
+<div class="bg">
+  <header>
+    <section>
+      <div style="margin-left:1400px ;margin-top: 50px;">
+        <a href="index.html">
+        <button type="menu" ><h2>HOME</h2></button></a>
+         </div>
+         <div style="margin-left: 1300px;margin-top: -24px;">
+          <a href="contact.html">
+          <button type="menu"><h2>CONTACT</h2></button>
+          </a>
+         </div>
+    </section>
+  </header>
+    <div class="painting-container" id="painting">
+        <img src="image/FdaInFzakAEMwqj.png" alt="Image">
+    </div>
+    <a href="page-link">
+        <div class="image-container" id="sofa">
+          <a href="sofa.html">
+          <img src="image\sofa.png" alt="Image">
+          </a>
+        </div>
+    </a>
+    <a href="page-link">
+        <div class="image-container" id="chair"><a href="couche.html">
+          <img src="image\Modern-Chair-PNG-HD-Quality.png" alt="Image">
+          </a>
+        </div>
+    </a>
+    <a href="page-link">
+        <div class="image-container" id="table">
+          <a href="Table.html">
+          <img src="image\table.png" alt="Image">
+          </a>
+        </div>
+    </a>
+</div>
+</body>
+</html>
